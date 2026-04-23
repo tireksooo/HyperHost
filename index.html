@@ -1,6 +1,430 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexHost – Hosting dla każdego</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-JOL
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-dot"></span>NexHost
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#plany">Plany</a></li>
+          <li class="nav-item"><a class="nav-link" href="#funkcje">Funkcje</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-accent btn-sm" href="#">Zaloguj się</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-accent btn-sm" href="#plany">Zacznij teraz</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section">
+    <div class="hero-bg-shape"></div>
+    <div class="container">
+      <div class="row align-items-center min-vh-80">
+        <div class="col-lg-6 hero-text">
+          <div class="badge-pill mb-3">
+            <span class="dot-pulse"></span> Szybki. Stabilny. Polski.
+          </div>
+          <h1 class="hero-title">Hosting, który<br /><span class="accent-text">po prostu działa.</span></h1>
+          <p class="hero-desc">Bez ukrytych kosztów, bez liftów cenowych po roku. Realne plany dla stron wizytówkowych, blogów i sklepów.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#plany" class="btn btn-accent btn-lg">Zobacz plany</a>
+            <a href="#funkcje" class="btn btn-ghost btn-lg">Dowiedz się więcej</a>
+          </div>
+          <div class="hero-stats row mt-5 g-3">
+            <div class="col-4">
+              <div class="stat-num">99.9%</div>
+              <div class="stat-label">Uptime</div>
+            </div>
+            <div class="col-4">
+              <div class="stat-num">24/7</div>
+              <div class="stat-label">Wsparcie</div>
+            </div>
+            <div class="col-4">
+              <div class="stat-num">&lt;1s</div>
+              <div class="stat-label">Czas odpowiedzi</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+          <div class="hero-visual">
+            <div class="server-card">
+              <div class="server-light"></div>
+              <div class="server-lines">
+                <div class="s-line"></div>
+                <div class="s-line short"></div>
+                <div class="s-line"></div>
+                <div class="s-line short"></div>
+              </div>
+            </div>
+            <div class="floating-badge badge-ssl">
+              <i class="bi bi-shield-check"></i> SSL
+            </div>
+            <div class="floating-badge badge-speed">
+              <i class="bi bi-lightning-charge-fill"></i> NVMe
+            </div>
+            <div class="floating-badge badge-backup">
+              <i class="bi bi-cloud-check"></i> Backup
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CECHY ===== -->
+  <section class="section-features py-6" id="funkcje">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Dlaczego NexHost?</h2>
+        <p class="section-sub">Bo hosting nie musi być loterią.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-nvme"></i></div>
+            <h5>Dyski NVMe</h5>
+            <p>Błyskawiczne ładowanie stron dzięki najszybszemu typowi nośników.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-shield-lock"></i></div>
+            <h5>SSL w cenie</h5>
+            <p>Certyfikat Let's Encrypt gratis. Automatyczne odnawianie bez Twojej interwencji.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <h5>Codzienne kopie</h5>
+            <p>Backup automatyczny co 24h. Przywracanie jednym kliknięciem z panelu.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-headset"></i></div>
+            <h5>Wsparcie 24/7</h5>
+            <p>Prawdziwi ludzie, nie tylko boty. Tickety, chat, telefon — Twój wybór.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLANY ===== -->
+  <section class="section-plans py-6" id="plany">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Wybierz plan</h2>
+        <p class="section-sub">Ceny bez promocyjnych haczyków. To co widzisz — to płacisz przez cały czas.</p>
+
+        <!-- Toggle rozliczenia -->
+        <div class="billing-toggle d-flex justify-content-center align-items-center gap-3 mt-4">
+          <span class="toggle-label" id="lbl-monthly">Miesięcznie</span>
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input billing-switch" type="checkbox" id="billingToggle" />
+          </div>
+          <span class="toggle-label" id="lbl-yearly">Rocznie <span class="badge-save">-15%</span></span>
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- STARTER -->
+        <div class="col-md-6 col-lg-4">
+          <div class="plan-card">
+            <div class="plan-header">
+              <div class="plan-icon"><i class="bi bi-seedling"></i></div>
+              <h4 class="plan-name">Starter</h4>
+              <p class="plan-desc">Idealna wizytówka lub prosty blog.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-amount" data-monthly="19" data-yearly="16">19</span>
+              <span class="price-currency">zł</span>
+              <span class="price-period">/mies.</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="bi bi-check2"></i> 5 GB przestrzeni NVMe</li>
+              <li><i class="bi bi-check2"></i> 1 domena / 5 subdomen</li>
+              <li><i class="bi bi-check2"></i> 5 kont e-mail</li>
+              <li><i class="bi bi-check2"></i> SSL gratis</li>
+              <li><i class="bi bi-check2"></i> Backup co 48h</li>
+              <li class="muted"><i class="bi bi-x"></i> Wiele stron WWW</li>
+              <li class="muted"><i class="bi bi-x"></i> Staging</li>
+            </ul>
+            <a href="#" class="btn btn-outline-accent w-100 mt-3">Wybierz Starter</a>
+          </div>
+        </div>
+
+        <!-- STANDARD (POPULAR) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="plan-card plan-popular">
+            <div class="popular-badge">Najpopularniejszy</div>
+            <div class="plan-header">
+              <div class="plan-icon"><i class="bi bi-lightning-charge"></i></div>
+              <h4 class="plan-name">Standard</h4>
+              <p class="plan-desc">Dla blogów, portoflio i małych sklepów.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-amount" data-monthly="39" data-yearly="33">39</span>
+              <span class="price-currency">zł</span>
+              <span class="price-period">/mies.</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="bi bi-check2"></i> 20 GB przestrzeni NVMe</li>
+              <li><i class="bi bi-check2"></i> 5 domen / nielimitowane subdomeny</li>
+              <li><i class="bi bi-check2"></i> 20 kont e-mail</li>
+              <li><i class="bi bi-check2"></i> SSL gratis</li>
+              <li><i class="bi bi-check2"></i> Backup co 24h</li>
+              <li><i class="bi bi-check2"></i> Wiele stron WWW</li>
+              <li class="muted"><i class="bi bi-x"></i> Staging</li>
+            </ul>
+            <a href="#" class="btn btn-accent w-100 mt-3">Wybierz Standard</a>
+          </div>
+        </div>
+
+        <!-- PRO -->
+        <div class="col-md-6 col-lg-4">
+          <div class="plan-card">
+            <div class="plan-header">
+              <div class="plan-icon"><i class="bi bi-rocket-takeoff"></i></div>
+              <h4 class="plan-name">Pro</h4>
+              <p class="plan-desc">Agencje, sklepy i wymagające projekty.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-amount" data-monthly="79" data-yearly="67">79</span>
+              <span class="price-currency">zł</span>
+              <span class="price-period">/mies.</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="bi bi-check2"></i> 60 GB przestrzeni NVMe</li>
+              <li><i class="bi bi-check2"></i> Nielimitowane domeny</li>
+              <li><i class="bi bi-check2"></i> Nielimitowane konta e-mail</li>
+              <li><i class="bi bi-check2"></i> SSL gratis</li>
+              <li><i class="bi bi-check2"></i> Backup co 24h + tygodniowy</li>
+              <li><i class="bi bi-check2"></i> Wiele stron WWW</li>
+              <li><i class="bi bi-check2"></i> Środowisko staging</li>
+            </ul>
+            <a href="#" class="btn btn-outline-accent w-100 mt-3">Wybierz Pro</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center mt-4 plans-note">Wszystkie plany zawierają panel DirectAdmin, instalator WordPress 1-click i brak umów na rok.</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section-faq py-6" id="faq">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center mb-5">
+            <h2 class="section-title">Często zadawane pytania</h2>
+          </div>
+          <div class="accordion custom-accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Czy ceny zmieniają się po pierwszym roku?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Nie. U nas nie ma cen promocyjnych, które skaczą po roku. Cena którą widzisz to cena, którą płacisz — zawsze.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Czy mogę zmienić plan w dowolnym momencie?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Tak, upgrade jest natychmiastowy i rozliczany proporcjonalnie. Downgrade obowiązuje od nowego okresu rozliczeniowego.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Jakie CMS-y mogę zainstalować?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  WordPress, Joomla, PrestaShop, Drupal i wiele innych — wszystkie jednym kliknięciem przez instalator Softaculous.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Czy oferujecie zwrot pieniędzy?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Tak, mamy 30-dniową gwarancję zwrotu pieniędzy bez podawania przyczyny — bez pytań.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section-cta py-6">
+    <div class="container">
+      <div class="cta-box text-center">
+        <h2 class="cta-title">Gotowy, żeby zacząć?</h2>
+        <p class="cta-sub">Uruchom swoją stronę w 5 minut. Bez karty kredytowej na start.</p>
+        <a href="#plany" class="btn btn-accent btn-lg mt-3">Wybierz plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="section-contact py-6" id="kontakt">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title mb-2">Skontaktuj się z nami</h2>
+          <p class="section-sub mb-5">Masz pytania? Napisz lub zadzwoń — odpiszemy szybciej niż myślisz.</p>
+          <div class="row g-4 justify-content-center">
+            <div class="col-sm-4">
+              <div class="contact-tile">
+                <i class="bi bi-envelope-at"></i>
+                <div>support@nexhost.pl</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="contact-tile">
+                <i class="bi bi-telephone"></i>
+                <div>+48 22 123 45 67</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="contact-tile">
+                <i class="bi bi-chat-dots"></i>
+                <div>Live chat 24/7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-3">
+            <span class="brand-dot"></span>NexHost
+          </div>
+          <p class="footer-about">Polski hosting bez gwiazdek i haczyków. Transparentne ceny, realna infrastruktura.</p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-2">
+          <h6 class="footer-heading">Oferta</h6>
+          <ul class="footer-links">
+            <li><a href="#">Hosting WWW</a></li>
+            <li><a href="#">Serwery VPS</a></li>
+            <li><a href="#">Domeny</a></li>
+            <li><a href="#">Certyfikaty SSL</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Firma</h6>
+          <ul class="footer-links">
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Kariera</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Pomoc</h6>
+          <ul class="footer-links">
+            <li><a href="#">Panel klienta</a></li>
+            <li><a href="#">Baza wiedzy</a></li>
+            <li><a href="#">Status usług</a></li>
+            <li><a href="#">Regulamin</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr mt-4" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+        <p class="footer-copy mb-0">© 2025 NexHost Sp. z o.o. Wszystkie prawa zastrzeżone.</p>
+        <div class="footer-socials d-flex gap-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Billing toggle
+    const toggle = document.getElementById('billingToggle');
+    const prices = document.querySelectorAll('.price-amount');
+
+    toggle.addEventListener('change', () => {
+      const yearly = toggle.checked;
+      prices.forEach(el => {
+        el.textContent = yearly ? el.dataset.yearly : el.dataset.monthly;
+      });
+      document.getElementById('lbl-monthly').classList.toggle('active-label', !yearly);
+      document.getElementById('lbl-yearly').classList.toggle('active-label', yearly);
+    });
+  </script>
+
 </body>
 </html>
